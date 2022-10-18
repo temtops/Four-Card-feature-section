@@ -1,0 +1,128 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+}
+header .start{
+    font-size: 24px;
+    padding: 5px 0;
+    color:hsl(229, 6%, 66%);
+    font-weight: 200;
+}
+header .end{
+    width: 100%;
+    padding-top: 10px;
+    color:hsl(229, 6%, 66%);
+    font-size: 15px;
+    font-weight: 200;
+}
+.end p{
+    width:34%;
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1{
+    padding:10px 0;
+    color:hsl(234, 12%, 34%);
+    font-size: 24px;
+    font-weight: 600;
+}
+main{
+    display: flex;;
+    justify-content: center;
+    padding: 70px 0;
+}
+.mid{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.mid .card{
+    width:100%;
+    margin-bottom: 30px;
+}
+.mid .card:last-child{
+    margin-bottom: 0;
+}
+.card{
+    width:25%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 4px 10px 10px  rgba(94, 108, 106, 0.36);
+    align-self: center;
+}
+.heading{
+    padding:10px 0;
+    font-size: 15px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+.text{
+    width:100%;
+    padding: 10px 0;
+    font-size: 15px;
+    color:hsl(229, 6%, 66%);
+}
+.icon{
+    text-align: end;
+    padding-top: 30px;
+}
+.card::before{
+    content: "";
+    width:99%;
+    position: absolute;
+    top:0%;
+    left: 0.5%;
+    height: 5px;
+    background-color: hsl(180, 62%, 55%);
+    border-radius: 100px 100px 0 0 ;
+}
+.karma::before{
+    background-color: hsl(34, 97%, 64%);
+}
+.team::before{
+    background-color: hsl(0, 78%, 62%);
+}
+.calculator::before{
+    background-color: hsl(212, 86%, 64%);
+}
+.supervisor{
+    margin-right: 30px;
+}
+.calculator{
+    margin-left: 30px;
+}
+@media only screen and (max-width:1300px){
+    main{
+        flex-direction: column;
+        padding: 50px 50px;
+    }
+    .mid{
+        width: 100%;
+    }
+    .card{
+        width:100%
+    }
+    .supervisor{
+        margin-right: 0;
+        margin-bottom: 30px
+    }
+    .calculator{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .end p{
+        width:80%
+    }
+}
